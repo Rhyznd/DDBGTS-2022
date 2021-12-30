@@ -1,0 +1,339 @@
+:root {
+    --purpleColor: #3d087b;
+    --darkColor: #11052c;
+    --magentaColor: #f43b86;
+    --pinkColor: #ffbcd7;
+    --yellowColor: #ffe459;
+}
+  
+body {
+    background: radial-gradient(55.86% 55.86% at 50% 50%, #3b2076 17.84%, rgba(93, 49, 191, 0.32) 86.94%, rgba(93, 49, 191, 0.29) 100%), #11052c;
+    backdrop-filter: blur(150px);
+    font-family: "Inter", sans-serif;
+    color: white;
+    display: flex;
+    padding-top: 100px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+@media (min-width: 992px){
+
+
+    /* Navbar */
+    .nav {
+        z-index: 9999;
+        position: sticky;
+        display: flex;
+        top: 0px;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-style: solid;
+        border-width: 3px;
+        -webkit-border-image: -webkit-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        -moz-border-image: -moz-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        -o-border-image: -o-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        border-image: linear-gradient(to left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -11px;
+    }
+    
+    .btnDaftar {
+        color: white;
+        font-size: 14px;
+        width: 151px;
+        height: 40px;
+        background: linear-gradient(93.79deg, rgba(107, 47, 242, 0.85) 30.31%, #f82279 67.09%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+    /* regis */
+    .title h3 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 80px;
+        text-align: center;
+        /* identical to box height, or 136% */
+
+        font-feature-settings: 'salt' on, 'liga' off;
+        
+    }
+
+    .h {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+        /* or 544% */
+        text-align: center;
+    }
+
+    .daftar {
+        margin-left: 50px;
+    }
+
+    .title input[type = "text"], .title input[type = "email"]{
+        border-color: #F43B86;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        background: none;
+        display: block;
+        width: 700px;
+        height: 50px;
+        line-height: 10px;
+        color: #FFFFFF;
+        font-size: 30px;  
+        text-align: center;
+    }
+
+    .title input[type = "radio"]{
+        border: 1px solid #a37a8a;
+        background: none;
+        color: #F43B86;
+        width: 28px;
+        height: 20px; 
+        line-height: normal;
+        background: none;
+        cursor: pointer;
+    }
+
+    .check-box span {
+        font-size: 25px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    
+    .title input[type = "file"]{
+        font-family: Inter;
+        font-style: normal;
+        border: 1px solid #a37a8a;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        background: none;
+        width: 700px;
+        height: 50px;
+        padding: 2px;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .title input[type = "submit"]{
+        padding: 9px 25px;
+        width: 180px;
+        background: linear-gradient(93.22deg, #8C2FF8 22.83%, #FE066B 80.25%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+
+    .element1 {
+        left: 200px;
+        margin-left: 400px;
+    }
+    
+    .element3 {
+        position: relative;
+        width: 55px;
+        height: 55px;
+        left: 50px;
+        bottom: 80px;
+        box-sizing: border-box;
+        margin-left: 100px;
+    }
+    .element4 {
+        position: relative;
+        width: 400px;
+        height: 430px;
+        left: 37px;
+        bottom: 100px;
+    }
+    .element5 {
+        position: relative;
+        margin-left: 158px;
+    }
+    .element6 {
+        position: relative;
+        left: 98px;
+    }
+    .element7 {
+        position: relative;
+        top: 200px;
+        left: 76px;
+    }
+    .element8 {
+        position: relative;
+        top: 350px;
+        margin-left: -0px;
+    }
+
+    .element9 {
+        position: relative;
+        left: -410px;
+        top: 50px;
+    }
+
+    .button-type{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn2 {
+        color: white;
+        padding: 12px 25px;
+        width: 180px;
+        height: 40px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        border: solid;
+        text-decoration: none;
+        border-color: #eb5f97;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Navbar */
+    .nav {
+        z-index: 9999;
+        position: fixed;
+        display: flex;
+        background: #3d087b;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-style: solid;
+        border-width: 3px;
+        -webkit-border-image: -webkit-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        -moz-border-image: -moz-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        -o-border-image: -o-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        border-image: linear-gradient(to left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -11px;
+    }
+
+    nav .btnDaftar {
+        color: white;
+        font-size: 14px;
+        width: 151px;
+        height: 40px;
+        background: linear-gradient(93.79deg, rgba(107, 47, 242, 0.85) 30.31%, #f82279 67.09%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-top: 7px;
+    }
+
+    /* element */
+    .element{
+        display: none;
+    }
+
+    /* regis */
+    .title input[type = "text"], .title input[type = "email"]{
+        border-color: #F43B86;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        background: none;
+        display: block;
+        width: 100%;
+        height: 30px;
+        line-height: 10px;
+        color: #FFFFFF;
+        font-size: 30px;  
+        text-align: center;
+    }
+
+    .title input[type = "radio"]{
+        border: 1px solid #a37a8a;
+        background: none;
+        color: #F43B86;
+        width: 28px;
+        height: 15px; 
+        line-height: normal;
+        background: none;
+        cursor: pointer;
+    }
+
+    .check-box span {
+        font-size: 15px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    
+    .title input[type = "file"]{
+        font-family: Inter;
+        font-style: normal;
+        border: 1px solid #a37a8a;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        background: none;
+        width: 100%;
+        height: 30px;
+        padding: 2px;
+        cursor: pointer;
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .title input[type = "submit"]{
+        padding: 5px 10px;
+        width: 140px;
+        background: linear-gradient(93.22deg, #8C2FF8 22.83%, #FE066B 80.25%);
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        cursor: pointer;
+        color: #FFFFFF;
+        font-size: 10px;
+    }
+
+    .btn2 {
+        color: white;
+        padding: 6px 15px;
+        width: 180px;
+        height: 40px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        border: solid;
+        text-decoration: none;
+        border-color: #f1659d;
+        font-size: 10px;
+    }
+
+    .button-type{
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        background: radial-gradient(55.86% 55.86% at 50% 50%, #3b2076 17.84%, rgba(93, 49, 191, 0.32) 86.94%, rgba(93, 49, 191, 0.29) 100%), #11052c;
+    }
+}

@@ -1,0 +1,402 @@
+:root {
+    --purpleColor: #3d087b;
+    --darkColor: #11052c;
+    --magentaColor: #f43b86;
+    --pinkColor: #ffbcd7;
+    --yellowColor: #ffe459;
+}
+  
+body {
+    background: radial-gradient(55.86% 55.86% at 50% 50%, #3b2076 17.84%, rgba(93, 49, 191, 0.32) 86.94%, rgba(93, 49, 191, 0.29) 100%), #11052c;
+    backdrop-filter: blur(150px);
+    font-family: "Inter", sans-serif;
+    color: white;
+    display: flexbox;
+    padding-top: 100px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@media (min-width: 992px){
+    .nav {
+        z-index: 9999;
+        position: fixed;
+        display: flex;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+    }
+    
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-style: solid;
+        border-width: 3px;
+        -webkit-border-image: -webkit-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        -moz-border-image: -moz-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        -o-border-image: -o-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        border-image: linear-gradient(to left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -11px;
+    }
+    
+    .btnDaftar {
+        color: white;
+        font-size: 14px;
+        width: 151px;
+        height: 40px;
+        background: linear-gradient(93.79deg, rgba(107, 47, 242, 0.85) 30.31%, #f82279 67.09%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+    .faq {
+        padding-top: 4rem;
+    }
+
+    .faq-item {
+        margin-bottom: 1rem;
+        padding: 1 rem;
+    }
+
+    .faq-details {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 98px;
+        /* or 136% */
+        font-feature-settings: 'salt' on, 'liga' off;
+    }
+
+    .faq-name {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 64px;
+        line-height: 98px;
+        /* identical to box height, or 153% */
+    }
+
+    .faq-links {
+        font-size: 1.6rem;
+        color: rgba(255,255,255,8);
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .faq-links fa {
+        padding: .5rem;
+    }
+
+    .faq-links .fa-angle-up{
+        display: none;
+    }
+
+    .answers {
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+        transition: max-heigth 650ms;
+        background-color: #212838;
+        border-radius: 10px;
+    }
+
+    .answers::before{
+        content: "";
+        position: absolute;
+        width: .6rem;
+        height: 90%;
+        background-color: #f43b86;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        border-radius: 10px;
+    }
+
+    .answers p{
+        font-size: 1.4rem;
+        color: rgba(255,255,255,.6);
+        padding: 2rem;
+    }
+
+    .faq-item:target .answers{
+        max-height: 20rem;
+
+    }
+
+    .faq-item:target .faq-links .fa-angle-down{
+        display: none;
+    }
+
+    .faq-item:target .faq-links .fa-angle-up{
+        display: block;
+    }
+
+    /* footer */
+
+    footer {
+        background: radial-gradient(55.86% 55.86% at 50% 50%, #3b2076 17.84%, rgba(93, 49, 191, 0.32) 86.94%, rgba(93, 49, 191, 0.29) 100%), #11052c;
+        backdrop-filter: blur(150px);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content h2 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 98px;
+    }
+
+    .footer-content h4 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .media {
+        cursor: pointer;
+        padding-bottom: 20px;
+    }
+
+    /* element */
+    .image1{
+        position: absolute;
+        left: 1108px;
+        top: 179px;
+    }
+
+    .image2{
+        position: absolute;
+        left: 1341.47px;
+        top: 254.23px;
+    }
+
+    .image3{
+        position: absolute;
+        left: 52.96px;
+        top: 495px;
+    }
+
+    .image4 {
+        position: absolute;
+        left: 1012.96px;
+        top: 399px;
+    }
+
+    .image5 {
+        position: absolute;
+        left: 1424.26px;
+        top: 283px;
+    }
+
+    .image6 {
+        position: absolute;
+        left: -9.74px;
+        top: 834px;
+    }
+
+    .image7 {
+        position: absolute;
+        left: 1453.91px;
+        top: 867.72px;
+    }
+
+    .image8 {
+        left: 31px;
+        top: 1311.51px;
+    }
+
+    .imageig {
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    /* Navbar */
+    .nav {
+        z-index: 9999;
+        position: fixed;
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    .nav-link:hover::after {
+        content: "";
+        display: block;
+        border-style: solid;
+        border-width: 3px;
+        -webkit-border-image: -webkit-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        -moz-border-image: -moz-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        -o-border-image: -o-linear-gradient(left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        border-image: linear-gradient(to left, rgba(80, 0, 174, 0.85) 29.91%, rgba(244, 59, 134, 0.79) 89.13%) 0 0 50% 0/0 0 3px 0;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -11px;
+    }
+
+    nav .btnDaftar {
+        color: white;
+        font-size: 14px;
+        width: 151px;
+        height: 40px;
+        background: linear-gradient(93.79deg, rgba(107, 47, 242, 0.85) 30.31%, #f82279 67.09%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-top: 7px;
+    }
+
+    .element {
+        display: none;
+    }
+
+    .image8 {
+        display: none;
+    }
+
+    .faq {
+        padding-top: 4rem;
+    }
+
+    .faq-item {
+        margin-bottom: 1rem;
+        padding: 1 rem;
+    }
+
+    .faq-details {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        /* or 136% */
+        font-feature-settings: 'salt' on, 'liga' off;
+    }
+
+    .faq-name {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        /* identical to box height, or 153% */
+    }
+
+    .faq-links {
+        font-size: 16px;
+        color: rgba(255,255,255,8);
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .faq-links fa {
+        padding: .5rem;
+    }
+
+    .faq-links .fa-angle-up{
+        display: none;
+    }
+
+    .answers {
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+        transition: max-heigth 650ms;
+        background-color: #212838;
+        border-radius: 10px;
+    }
+
+    .answers::before{
+        content: "";
+        position: absolute;
+        width: .6rem;
+        height: 90%;
+        background-color: #f43b86;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        border-radius: 10px;
+    }
+
+    .answers p{
+        font-size: 16px;
+        color: rgba(255,255,255,.6);
+        padding: 2rem;
+    }
+
+    .faq-item:target .answers{
+        max-height: 20rem;
+
+    }
+
+    .faq-item:target .faq-links .fa-angle-down{
+        display: none;
+    }
+
+    .faq-item:target .faq-links .fa-angle-up{
+        display: block;
+    }
+
+    /* footer */
+
+    footer {
+        background: radial-gradient(55.86% 55.86% at 50% 50%, #3b2076 17.84%, rgba(93, 49, 191, 0.32) 86.94%, rgba(93, 49, 191, 0.29) 100%), #11052c;
+        backdrop-filter: blur(150px);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content h2 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 98px;
+    }
+
+    .footer-content h4 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .media {
+        cursor: pointer;
+        padding-bottom: 20px;
+    }
+
+    .imageig {
+        margin-right: 30px;
+    }
+
+    nav {
+        background: radial-gradient(55.86% 55.86% at 50% 50%, #3b2076 17.84%, rgba(93, 49, 191, 0.32) 86.94%, rgba(93, 49, 191, 0.29) 100%), #11052c;
+    }
+}
